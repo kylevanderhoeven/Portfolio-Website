@@ -1,0 +1,138 @@
+body {
+  background-color: #232323;
+  margin: 0;
+  font-family: "Montserrat", "Avenir", sans-serif;
+}
+
+.square {
+  width: 30%;
+  background: purple;
+  padding-bottom: 30%;
+  float: left;
+  margin: 1.66%;
+  border-radius: 15%;
+  transition: background 0.6s;
+  -webkit-transition: background 0.6s;
+  -moz-transition: background 0.6s;
+}
+
+.normal {
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.extremesquare {
+  width: 17%;
+  background: purple;
+  padding-bottom: 30%;
+  float: left;
+  margin: 1.5%;
+  border-radius: 15%;
+  transition: background 0.6s;
+  -webkit-transition: background 0.6s;
+  -moz-transition: background 0.6s;
+}
+
+h1 {
+  text-align: center;
+  line-height: 1.1;
+  font-weight: normal;
+  color: white;
+  background: steelblue;
+  margin: 0;
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+
+#title {
+  text-decoration: underline;
+  font-size: 150%;
+  text-shadow: 5px 5px 5px rgba(0,0,0,.3);
+}
+
+#colorDisplay {
+  font-size: 200%;
+}
+
+#message {
+  display: inline-block;
+  width: 20%;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+#stripe {
+  background: white;
+  height: 30px;
+  text-align: center;
+}
+
+.selected {
+  color: white;
+  background: steelblue;
+}
+
+button {
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  height: 100%;
+  font-weight: 700;
+  color: steelblue;
+  letter-spacing: 1px;
+  font-size: inherit;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  outline: none;
+}
+
+button:hover {
+  color: white;
+  background: steelblue;
+}
+
+/********** ANIMATION ******************/
+
+#extreme:hover {
+  background: red;
+  font-size: 1.1em;
+  animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) infinite;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+/********** MEDIA QUERIES ******************/
+
+@media (max-width: 600px) {
+
+  h1 {
+    font-size: 1em;
+  }
+
+  button {
+    font-size: .6em;
+  }
+
+  #extreme:hover {
+    font-size: .6em;
+}
