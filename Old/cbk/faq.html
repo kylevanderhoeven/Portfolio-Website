@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title> Fatima Hair Braiding - FAQ</title>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content=" describe content ">
+<link href="css/style.css" rel="stylesheet">
+<style>
+
+</style>
+<script src="js/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+    function close_accordion_section() {
+        $('.accordion .accordion-section-title').removeClass('active');
+        $('.accordion .accordion-section-content').slideUp(300).removeClass('open');
+    }
+ 
+    $('.accordion-section-title').click(function(e) {
+        // Grab current anchor value
+        var currentAttrValue = $(this).attr('href');
+ 
+        if($(e.target).is('.active')) {
+            close_accordion_section();
+        }else {
+            close_accordion_section();
+ 
+            // Add active class to section title
+            $(this).addClass('active');
+            // Open up the hidden content panel
+            $('.accordion ' + currentAttrValue).slideDown(300).addClass('open'); 
+        }
+        e.preventDefault();
+    });
+});
+</script>
+</head>
+<body>
+
+<div id="wrapper">
+
+<header>
+    <h1 style="display:inline;">Fatima Hair Braiding</h1>
+	<div  id="phone" style="font-size: 12px; position: absolute; top: 0; right:5px; ">(587)340 0460 </div>
+	<div id="email" style="font-size: 12px; position: absolute; top: 20px; right:5px; "><a style="text-decoration: none; color: white" href="mailto:info@FatimaBraiding.com">info@FatimaBraiding.com </a></div>
+</header>
+<div id="content">
+<nav>
+<label id="hamburger" for="show-menu" class="show-menu"><img src="images/hamburger_small.png"></label>
+<input type="checkbox" id="show-menu" role="button">
+
+<ul id="menu">
+   <li><a href="index.html"> Home </a></li>
+   <li><a href="#">About +</a>
+       <ul class="hidden">
+            <li><a href="bio.html">Biography</a></li>
+            <li><a href="directions.html">Directions</a></li>
+       </ul>
+	</li>
+    <li><a href="contact.html">Contact Us </a></li>
+    <li><a href="#">FAQ</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+</ul>
+</nav>
+
+<!--Feedback button-->
+<div class="feedback" style="display: none;">
+<form>
+    <input type="button" id="feedback" value="Feedback">
+</form>
+</div>
+
+<div class="feedbackform">
+    <form id="feedbackform" action="#">
+     <p><i>Please complete the form. Mandatory fields are marked with a </i><em>*</em></p><br>
+   <div style="max-width: 100%; max-height:100%; text-align: center; font-size:.75em;">
+        <label for="name">Name <em>*</em></label><br><br>
+        <input id="name" autofocus required><br><br>
+		
+		<label for="email">Email <em>*</em></label><br><br>
+        <input class="email" type="email" required><br><br>
+		
+		<label for="message">Message <em>*</em></label><br><br>
+        <textarea required></textarea><br><br>
+   </div>
+   <div id = "submitcancel" style ="text-align: center;">
+        <input type="submit" value="send">&nbsp;&nbsp;
+		<input id = "cancel" type = "button" value = "cancel">
+   </div><br>
+	
+</form>
+</div>
+<div class="accordion" style="font-size: 14px;">
+    <br><p style="margin: 4px;"> <strong><u>Frequently asked questions</u></strong>:</p><br>
+    <div class="accordion-section">
+        <a class="accordion-section-title" href="#accordion-1">Can I just come in or do I have to make an appointment?</a>
+         
+        <div id="accordion-1" class="accordion-section-content">
+             Walkins are welcome but we recommend making an appointment to ensure we can accommodate your needs without wait time.</p>
+        </div><!--end .accordion-section-content-->
+    </div><!--end .accordion-section-->
+	<div class="accordion-section">
+        <a class="accordion-section-title" href="#accordion-2">Where are you located?</a>
+         
+        <div id="accordion-2" class="accordion-section-content">
+            <p>120 Country Village NE Calgary Alberta </p>
+        </div><!--end .accordion-section-content-->
+    </div><!--end .accordion-section-->
+	<div class="accordion-section">
+        <a class="accordion-section-title" href="#accordion-3">What hair products do you sell?</a>
+         
+        <div id="accordion-3" class="accordion-section-content">
+            <p>We have selected a range of products to cover every need in both luxury high end and affordable salon quality product lines. We also carry a variety of other beauty products including beauty tools, lotions, nail polishes and more! </p>
+        </div><!--end .accordion-section-content-->
+    </div><!--end .accordion-section-->
+	<div class="accordion-section">
+        <a class="accordion-section-title" href="#accordion-4">Do you take credit cards?</a>
+         
+        <div id="accordion-4" class="accordion-section-content">
+            <p> We only take cash and debit cards.</p>
+        </div><!--end .accordion-section-content-->
+    </div><!--end .accordion-section-->
+	<div class="accordion-section">
+        <a class="accordion-section-title" href="#accordion-5">What are your hours?</a>
+         
+        <div id="accordion-5" class="accordion-section-content">
+            <p> We are open Monday thru Saturday from 8AM to 6PM.</p>
+        </div><!--end .accordion-section-content-->
+    </div><!--end .accordion-section-->
+</div><!--end .accordion-->
+
+<br><br><p><strong>To be completed...</strong></p>
+</div>
+</div>
+<footer>
+<p style="text-align: center"> 
+Last updated on <time>September 28, 2015</time><br>
+Calgary, Alberta (Canada)<br>
+Design by CalgaryWebConsulting.com
+</p>
+<div  id="facebook" style="position:absolute; bottom: 10px; right:5px; border: 1px solid white; font-size: .75em; width: 100px">
+<form>
+     <a href="https://www.facebook.com/login/"  target="_blank"><input type="button" value="Facebook"></a>
+</form>
+</div>
+<br class="clearfloat" />
+</footer>
+</div><!-- end of wrapper div -->
+
+</body>
+</html>

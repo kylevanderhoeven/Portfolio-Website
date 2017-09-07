@@ -1,0 +1,78 @@
+
+{
+
+	"frames":[
+		{
+
+			"filename":"image1001",
+			"sourceSize":{
+				"w":500,
+				"h":460},
+			"spriteSourceSize":{
+				"y":0,
+				"x":0,
+				"w":500,
+				"h":460},
+			"frame":{
+				"y":0,
+				"x":0,
+				"w":500,
+				"h":460},
+			"trimmed":false},
+		{
+
+			"filename":"image1002",
+			"sourceSize":{
+				"w":500,
+				"h":460},
+			"spriteSourceSize":{
+				"y":0,
+				"x":0,
+				"w":500,
+				"h":460},
+			"frame":{
+				"y":0,
+				"x":500,
+				"w":500,
+				"h":460},
+			"trimmed":false},
+		{
+
+			"filename":"image1003",
+			"sourceSize":{
+				"w":500,
+				"h":460},
+			"spriteSourceSize":{
+				"y":0,
+				"x":0,
+				"w":500,
+				"h":460},
+			"frame":{
+				"y":460,
+				"x":0,
+				"w":500,
+				"h":460},
+			"trimmed":false},
+		{
+
+			"filename":"image1004",
+			"sourceSize":{
+				"w":500,
+				"h":460},
+			"spriteSourceSize":{
+				"y":0,
+				"x":0,
+				"w":500,
+				"h":460},
+			"frame":{
+				"y":460,
+				"x":500,
+				"w":500,
+				"h":460},
+			"trimmed":false}],
+	"meta":{
+		"scale":1,
+		"image":"robotanimatedsprites.png",
+		"size":{
+			"w":1000,
+			"h":1000}}}

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rain</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+<style>
+
+{
+  margin: 0;
+  padding: 0;
+}
+
+a {
+	color: white;
+	font-style: italic;
+}
+
+
+/*Keyframes*/
+
+@keyframes lights {
+  0% {background-color: white;}
+  50% {background-color: black;}
+}
+
+@-moz-keyframes lights {
+  0% {background-color: white;}
+  50% {background-color: black;}
+}
+
+@-webkit-keyframes lights {
+  0% {background-color: white;}
+  50% {background-color: black;}
+}
+
+@-ms-keyframes lights {
+  0% {background-color: white;}
+  50% {background-color: black;}
+}
+
+@keyframes rain {
+0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+ 100% {background-position: 500px 1500px, 400px 1200px, 300px 900px;}
+}
+
+@-moz-keyframes rain {
+0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+100% {background-position: 500px 1500px, 400px 1200px, 300px 900px;}
+}
+
+@-webkit-keyframes rain {
+0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+ 100% {background-position: 500px 1500px, 400px 1200px, 300px 900px;}
+}
+
+@-ms-keyframes rain {
+0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+ 100% {background-position: 500px 1500px, 400px 1200px, 300px 900px;}
+}
+
+
+body {
+	background-color: black;
+	background-image: url('rain1.png'), url('rain2.png'), url('rain3.png');
+  display: table-row;
+
+	-webkit-animation: rain 2s linear infinite, lights 8s linear infinite;
+	-moz-animation: rain 2s linear infinite, lights 8s linear infinite;
+	-ms-animation: rain 2s linear infinite, lights 8s linear infinite;
+	animation: rain 2s linear infinite, lights 8s linear infinite;
+}
+
+#container {
+  position: absolute;
+	width: 0 auto;
+	margin: 200px auto;
+
+	text-align: center;
+	color: white;
+	font: 3em/1 'Spirax', cursive;
+
+	text-shadow: 0px 0px 4px rgba(255,255,255, 0.5);
+}
+
+#container p {
+	font: 3em "Arial", Helvetica, Geneva, sans-serif;
+  font-size: 3em;
+  position: relative;
+  top: -300px;
+}
+
+#lightning {
+
+  position: fixed;
+  left: 10%;
+  top: 5%;
+  margin: auto;
+  animation: lightningfade 8s linear infinite;
+}
+
+@keyframes lightningfade {
+0% {opacity: 1;}
+
+100% {opacity: 0;}
+
+}
+
+@-moz-keyframes lightningfade {
+  0% {opacity: 1;}
+
+  100% {opacity: 0;}
+}
+
+@-webkit-keyframes lightningfade {
+  0% {opacity: 1;}
+
+  100% {opacity: 0;}
+}
+
+@-ms-keyframes lightningfade {
+  0% {opacity: 1;}
+
+  100% {opacity: 0;}
+}
+
+
+#footerimage
+  {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+
+}
+
+#footerimage2
+  {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    animation-name: pumpkinfade;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-direction: alternate;
+}
+
+@keyframes pumpkinfade {
+  0% {
+  opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+
+#footer {
+    position:fixed;
+    right:0;
+    bottom:0;
+    margin:0;
+    padding:0;
+    width:100%;
+
+}
+
+#nav {
+  position: fixed;
+  right: -50%;
+  bottom: 50;
+  margin: 0;
+  z-index: 1;
+  width: 100%;
+
+}
+
+#nav img {
+
+  margin: 0;
+
+}
+
+#nav ul {
+
+  list-style-type: none;
+}
+
+#nav ul li img:hover {
+  transition: all .5s ease-in-out;
+  transform: scale(1.5, 1.5);
+}
+
+
+
+</style>
+
+
+</head>
+
+<body>
+
+
+  <div id="container">
+     	<p></p>
+      <img id="lightning" src="lightning.png"></img>
+     </div>
+
+<div id="nav">
+     <ul>
+       <li><img src="homebutton2.png"></img></li>
+       <li><img src="askbutton2.png"></img></li>
+       <li><img src="aboutbutton2.png"></img></li>
+     </ul>
+</div>
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<footer id="footer">
+<img id="footerimage" src="rainyfooter.png"></img>
+<img id="footerimage2" src="pumpkinyellow.png"></img>
+</footer>
+
+</body>
+
+</html>
