@@ -1,7 +1,0 @@
-Switches:		Rollover Effect:
-
-8-Bit			Arm raise ("1-Up!")
-Cat			Open Mouth, eyes closed ("Meow")
-Disappear	 	Head pops up from bottom
-Mime			Hands up, mouth open eyes closed
-Future			Grits teeth, background changes to futuristic
