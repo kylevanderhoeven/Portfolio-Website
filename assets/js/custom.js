@@ -93,6 +93,18 @@ $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
 
+/* ENVELOPE ANIMATION ON CONTACT FORM
+========================== */
+
+$(document).ready(function(){
+           $("#formsub").mouseover(function(){
+                $("#env").css("left", "12%");
+           });
+            $("#formsub").mouseout(function(){
+                $("#env").css("left", "");
+           });
+        });
+
 /* STYLE SWITCH FOR PAGE
 ========================== */
 

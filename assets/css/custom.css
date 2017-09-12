@@ -197,6 +197,15 @@ section.success a.active {
     color: #008AB8;
 }
 
+#env {
+    font-size: 60px; 
+	position: absolute; 
+	top: 0%; 
+	left: 5%; 
+	z-index: -1;
+    transition: left .3s ease-in-out;
+}
+
 /* 8-BIT CLASS STYLES
 ======================= */
 
