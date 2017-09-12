@@ -109,13 +109,13 @@ $(document).ready(function(){
 ========================== */
 
 $("#eightBit").click(function(){
-            $("body, h1, h2, h3, h4, h5, h6, p, a, .name, button, #switchstyle, #switchstyle span, .skills, .star-light, .star-primary").addClass("eight-bit");
+            $("body, h1, h2, h3, h4, h5, h6, p, a, .name, button, #switchstyle, #switchstyle span, .skills, .star-light, .star-primary, #formsub").addClass("eight-bit");
             $("#profileimage").css('display', 'none');
             $("#profile8bit").css('display', 'block');
             });
             
             $("#default").click(function(){
-            $("body, h1, h2, h3, h4, h5, h6, p, a, .name, button, #switchstyle, #switchstyle span, .skills, .star-light, .star-primary").removeClass("eight-bit");
+            $("body, h1, h2, h3, h4, h5, h6, p, a, .name, button, #switchstyle, #switchstyle span, .skills, .star-light, .star-primary, #formsub").removeClass("eight-bit");
             $("#profile8bit").css('display', 'none');
             $("#profileimage").css('display', 'block');
             });

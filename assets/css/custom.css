@@ -258,6 +258,11 @@ button.eight-bit {
         display: none;
 }
 
+#formsub.eight-bit {
+    font-size: 1.1em;
+    padding: 22px 22px;
+}
+
 /* END 8-BIT
 ======================= */
 
