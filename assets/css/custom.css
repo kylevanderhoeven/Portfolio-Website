@@ -156,6 +156,18 @@ header .intro-text .skills {
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
+    animation-iteration-count: 3;
+}
+
+/* Flip animation */
+
+.flip {
+    animation: .5s flip .5s linear;
+}
+
+@keyframes flip {
+    from    {transform: rotateY(0deg);}
+    to      {transform: rotateY(360deg);}
 }
 
 #switchstyle {
