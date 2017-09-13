@@ -93,6 +93,13 @@ $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
 
+/* SPIN ANIMATION ON NAVBAR LOGO
+========================== */
+
+$("#navbrand-logo").click(function() {
+        $('#navbrand-logo').toggleClass('flip');
+    });
+
 /* ENVELOPE ANIMATION ON CONTACT FORM
 ========================== */
 
