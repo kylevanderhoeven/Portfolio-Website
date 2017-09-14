@@ -98,6 +98,9 @@ $('.navbar-collapse ul li a').click(function() {
 
 $("#navbrand-logo").click(function() {
         $('#navbrand-logo').toggleClass('flip');
+        setTimeout(function () {
+           $('#navbrand-logo').removeClass('flip');
+        }, 2000);
     });
 
 /* ENVELOPE ANIMATION ON CONTACT FORM

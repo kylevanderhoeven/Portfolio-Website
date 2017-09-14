@@ -252,6 +252,7 @@ section.success a.active {
 
 h2.eight-bit {
     font-size: 3em;
+    word-spacing: -10px;
 }
 
 h3.eight-bit {
@@ -587,35 +588,32 @@ footer .footer-below {
     background: #008AB8;
 }
 
-#examples hr  {
+.examples hr  {
       height: 3px;
       max-width: 250px;
       background-color: #2c3e50;
     }
 
-#examples .hr-websites {
+.examples .hr-websites {
       height: 3px;
       max-width: 500px;
       background-color: #2c3e50;
 }
 
-#examples .star-primary {
+.examples .star-primary {
     max-width: 500px;
 }
 
-#examples img {
+.examples img,
+.examples png {
   max-width: 100%;
 }
 
-#examples .mobileImage {
+.examples .mobileImage {
   width: 30%;
 }
 
-#examples png {
-  max-width: 100%;
-}
-
-#examples ul {
+.examples ul {
         margin-left: -30px;
     }
 
