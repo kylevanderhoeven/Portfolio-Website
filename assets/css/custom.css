@@ -157,12 +157,18 @@ header .intro-text .skills {
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     animation-iteration-count: 3;
+    -webkit-animation-iteration-count: 3;
+    -moz-animation-iteration-count: 3;
+    -o-animation-iteration-count: 3;
 }
 
 /* Flip animation */
 
 .flip {
     animation: .5s flip .5s linear;
+    -webkit-animation: .5s flip .5s linear;
+    -moz-animation: .5s flip .5s linear;
+    -o-animation: .5s flip .5s linear;
 }
 
 @keyframes flip {
@@ -217,6 +223,8 @@ section.success a.active {
 	left: 5%; 
 	z-index: -1;
     transition: left .3s ease-in-out;
+    -webkit-transition: left .3s ease-in-out;
+    -moz-transition: left .3s ease-in-out;
 }
 
 /* 8-BIT CLASS STYLES
