@@ -20,6 +20,16 @@ authors[5] = "John Cleese";
 //calculate a random index number
 index = Math.floor(Math.random() * quotes.length);
 
+/* SPINNING LOGO FUNCTION 
+========================== */
+
+$.fn.logospin = function () {
+    $('#navbrand-logo').toggleClass('flip');
+        setTimeout(function () {
+           $('#navbrand-logo').removeClass('flip');
+        }, 2000);
+};
+
 /* PAGE SCROLLING
 ========================== */
 
@@ -30,6 +40,7 @@ $(function() {
         $('html, body, .modal').stop().animate({
             scrollTop: $($anchor.attr('href')).offset().top
         }, 1500, 'easeInOutExpo');
+        $('#navbrand-logo').logospin();
         event.preventDefault();
     });
 });
@@ -92,16 +103,6 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
-
-/* SPIN ANIMATION ON NAVBAR LOGO
-========================== */
-
-$("#navbrand-logo").click(function() {
-        $('#navbrand-logo').toggleClass('flip');
-        setTimeout(function () {
-           $('#navbrand-logo').removeClass('flip');
-        }, 2000);
-    });
 
 /* ENVELOPE ANIMATION ON CONTACT FORM
 ========================== */
